@@ -43,7 +43,6 @@ body {
 
 .menu ul {
     display: flex;
-   
 }
 
 .menu li {
@@ -94,6 +93,7 @@ body {
     width: 100vw;
     margin: 9px 0 3px 0;
     display: flex;
+    padding: 30px 0;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -175,18 +175,16 @@ a {
     margin-bottom: 20px;
     z-index: 1;
     text-shadow: -0.2px 0.5px 0.1px rgba(46, 41, 41, 0.1);
-    
 }
+
 h3 {
     font-size: 0.8rem;
     width: 80px;
-    
 }
 
 .tipo-carteira {
     background-color: rgb(9, 130, 223);
     padding: 13px;
-    
 }
 
 .operation-content .content-desc {
@@ -196,11 +194,11 @@ h3 {
     width: 80px;
     text-align:center;
 }
+
 .content-desc h1 {
     background-color: rgba(0, 0, 0, 1);
     padding: 10px 20px 3px 20px;
     color: white;
-       
 }
 
 .aplications {    
@@ -226,7 +224,6 @@ h3 {
     flex-wrap: wrap; 
     font-size: 1.3rem;
     margin: 3% 0;
-    
 }
 
 .form input {
@@ -250,6 +247,7 @@ h3 {
     margin: 10px;
     padding: 5px;
 }
+
 .button-row {
     display: flex;
     justify-content: flex-end;
@@ -261,9 +259,14 @@ h3 {
     background-color: rgb(66, 53, 53);
     padding: 1px;
     width: 86px;
-    margin: 3px;
     color: white;
     font-size: 1rem;
+}
+
+.button-row .fav {
+    margin-left: 140px;
+    margin-top: -5px;
+
 }
 .send-button {
     padding: 6px;
@@ -284,6 +287,7 @@ h3 {
     font-size: 1.1rem;
     text-align: center;
 }
+
 .aplications .card {
     background-color: white;
     margin: 6px 2px;
@@ -294,8 +298,6 @@ h3 {
     justify-content: center ;
     height: 50px;
 }
-
-
 
 .aplication-qty {
     align-self: flex-end;
@@ -324,17 +326,15 @@ h3 {
 .aplications .see-more:active {
     background-color: rgb(105, 10, 189);
 }
+
 .aplications p {
     margin: 6px 0px 14px 2px;
     color: rgb(14, 78, 14);
     font-weight: bold;
-    /* background-color: rgba(255, 255, 255, 0.3); */
-
 }
 
 .aplications .red {
     color: red;
-    /* background-color: green; */
 }
 
 .footer {
@@ -354,15 +354,26 @@ h3 {
     border-bottom: 3px solid black;
 }
 
+.footer li h3 {
+    font-size: 1.03rem;
+    /* text-align: center; */
+    width: 200px;
+    text-decoration: underline;
+}
+
+.footer h3 {
+    font-size: 1.65rem;
+    width: 150px;
+    text-align: center;
+}
 .footer div:first-child {
     display: flex;
-    
 }
 
 .footer .ai-description {
     align-items: center;
     justify-content: flex-end;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     text-align: right;
     margin: 20px 0px 30px 0;
     width: 100vw;
@@ -374,11 +385,13 @@ h3 {
     margin:0px;
     padding: 0px;
 }
+
 .footer ul {
     display: flex;
     flex-direction: column;
     min-width: 140px;
     list-style-type: none;
+    padding-bottom: 8px;
 }
 
 .footer li {
@@ -387,6 +400,7 @@ h3 {
     margin: 3px 6px;
     color:rgba(255, 255, 255, 0.7);
     text-shadow: 0px 1px 0px rgb(46, 41, 41);
+    align-items: center;
 }
 
 .footer-row {
@@ -394,13 +408,13 @@ h3 {
     align-items: flex-end;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-
+    gap: 18px;
+    width: 100vw;
 }
 
 
 .social-media {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .login {
@@ -431,33 +445,35 @@ li.login {
     max-height: 480px;
 }
 
-@media screen and (min-width: 420px) {
-    
+@media screen and (min-width: 420px) {  
+
     .mid-row {
-        margin-left: 0%;
+        padding-left: 5%;
     }
     .operation-content {
         margin-right: 50px;
     }
+    
 }
 
 @media screen and (min-width:660px) {
+
+    .fav {
+        display: none;
+    }
     .aplications {
         display: flex;
         position: relative;
     }
-
     .aplications-content {
         display: flex;
     }
-
     .footer {
         font-size: 1.2rem;
     }
     .footer-row {
         gap: 45px;
     }
-
     .footer .ai-description h3 {
         font-size: 1.6rem;
         width: 100vw;

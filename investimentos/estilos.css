@@ -41,7 +41,6 @@ body {
 
 .menu ul {
     display: flex;
-   
 }
 
 .menu li {
@@ -96,23 +95,30 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:6%
+    gap: 3%   
     
 }
 
 .operation-content {
+    display: flex;
+    justify-content: center;
+    /* margin-left: 3vh; */
+    margin-right: -10.5vh;
+    z-index:5;
     display: none;
 }
 
+.operation-content .main {
+    display: flex;
+    align-items: center;
+    
+}
+
 .operation-content .content {
-    min-height: 50vh;
+    max-height: 85vh;
     width: 60px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 20px;
+    
 }
 
 .op-button {
@@ -142,15 +148,16 @@ a {
     background-color: blanchedalmond;
     max-width: 40%;
     justify-content: center;
-    max-width: 300px;
+    /* max-width: 300px; */
 }
 
 .main {
-    margin: 12% 0;
+    /* margin: 12% 0; */
     background-color: blanchedalmond;
     display: flex;
     justify-content: center;
-    min-height: 67vh;
+    align-items: center ;
+    min-height: 47vh;
     padding: 30px 12px;
     border-radius: 4px;
 }
@@ -162,7 +169,7 @@ a {
     align-items: center;
     color: white;
     padding-bottom: 30px;
-    padding: 15px 6px;
+    padding: 15px 13px;
     border-radius: 4px;
 }
 
@@ -170,7 +177,7 @@ a {
 .tipo {
     font-size: 1.2rem;
     font-weight: 300;
-    background-color: rgb(0, 255, 255, 0.8);
+    background-color: rgb(0, 255, 255, 0.9);
     color: white;
     padding: 13px;
     margin-bottom: 20px;
@@ -196,6 +203,7 @@ h3 {
     align-items: center;
     width: 80px;
     text-align:center;
+    margin-top: 10px;
 }
 .content-desc h1 {
     background-color: rgba(0, 0, 0, 1);
@@ -212,6 +220,7 @@ h3 {
 .see-more {
     margin: 30px 0 20px 0;
     background-color: rgb(10, 1, 1);
+    cursor: pointer;
 }
 .aplications {    
     font-size: 0.6rem;
@@ -229,6 +238,22 @@ h3 {
     z-index: 2;
     max-height: 63vh;
     border-radius: 6px;
+}
+
+.aplications-content {
+    margin: 9vh 0;
+    /* margin: 16vh 0 10vh 0; */
+    /* display: none; */
+    /* max-height: 30vh; */
+    align-self: center;
+    z-index: 3;
+}
+
+.aplications-content .main {
+    margin: 35px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
 }
 
 .main form {
@@ -306,6 +331,7 @@ h3 {
     justify-content: center ;
     height: 50px;
     width: 90px;
+    cursor: pointer;
 }
 .aplications .cards {
     display: flex;
@@ -361,15 +387,26 @@ h3 {
     border-bottom: 3px solid black;
 }
 
+.footer li h3 {
+    font-size: 1.03rem;
+    /* text-align: center; */
+    width: 200px;
+    text-decoration: underline;
+}
+
+.footer h3 {
+    font-size: 1.65rem;
+    width: 150px;
+    text-align: center;
+}
 .footer div:first-child {
     display: flex;
-    
 }
 
 .footer .ai-description {
     align-items: center;
     justify-content: flex-end;
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     text-align: right;
     margin: 20px 0px 30px 0;
     width: 100vw;
@@ -381,11 +418,13 @@ h3 {
     margin:0px;
     padding: 0px;
 }
+
 .footer ul {
     display: flex;
     flex-direction: column;
     min-width: 140px;
     list-style-type: none;
+    padding-bottom: 8px;
 }
 
 .footer li {
@@ -394,6 +433,7 @@ h3 {
     margin: 3px 6px;
     color:rgba(255, 255, 255, 0.7);
     text-shadow: 0px 1px 0px rgb(46, 41, 41);
+    align-items: center;
 }
 
 .footer-row {
@@ -401,16 +441,32 @@ h3 {
     align-items: flex-end;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-
+    gap: 18px;
+    width: 100vw;
 }
 
 
 .social-media {
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .login {
+    background-color: rgba(165, 42, 42,0.8);
+    text-align: right;
+}
+
+li.login {
+    margin-right: 20px;
+    padding: 0 5px;
+    background-color: rgba(165, 42, 42,0.8);
+    text-decoration: underline;
+    text-align: right;
+}
+
+
+
+
+/* .login {
     background-color: rgba(165, 42, 42,0.8);
 
 }
@@ -421,23 +477,16 @@ li.login {
     text-decoration: underline;
     align-self: center;
     /* display: none; */
-}
-
-.content-lg {
-    margin-top: 20px;
-    display: none;
-}
+/* } */ 
 
 
-    
-}
 @media screen and (min-width:660px) {
     .aplications {
         display: flex;
         position: relative;
     }
 
-    .content-lg {
+    .aplications-content {
         display: flex;
     }
 
@@ -465,7 +514,7 @@ li.login {
         width: 860px; 
     }
 
-    .content-lg {
+    .operation-content {
         display: flex;
     }
 
