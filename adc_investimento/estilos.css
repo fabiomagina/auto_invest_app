@@ -92,14 +92,17 @@ body {
 .mid-row {
     background-color: black;
     width: 100vw;
-    /* height: 56%; */
     margin: 9px 0 3px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap:6%
-    
+    margin-left: -0.5%;
+}
+
+.operation-content {    
+    margin-right: 25px;
+    z-index: 3;
 }
 
 .operation-content .content {
@@ -147,7 +150,7 @@ a {
     display: flex;
     justify-content: center;
     min-height: 67vh;
-    padding: 30px 12px;
+    /* padding: 30px 12px; */
     border-radius: 4px;
 }
 
@@ -164,11 +167,11 @@ a {
 
 
 .tipo {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 300;
     background-color: rgb(0, 255, 255, 0.8);
     color: white;
-    padding: 13px;
+    padding: 13px 3px;
     margin-bottom: 20px;
     z-index: 1;
     text-shadow: -0.2px 0.5px 0.1px rgba(46, 41, 41, 0.1);
@@ -211,7 +214,7 @@ h3 {
     /* margin-top: 7%; */
     margin-left: 3%;
     z-index: 2;
-    max-height: 63vh;
+    max-height: 450px;
     border-radius: 6px;
     display: none;
 }
@@ -240,7 +243,7 @@ h3 {
 
 
 .form textarea {
-    min-width: 290px;
+    min-width: 260px;
     max-width: 290px;
     height: 50px;
     font-size: 1.1rem;
@@ -292,6 +295,8 @@ h3 {
     height: 50px;
 }
 
+
+
 .aplication-qty {
     align-self: flex-end;
     background-color: rgb(28, 17, 17);
@@ -300,16 +305,24 @@ h3 {
     font-size: 1rem;
 }
 
-.aplications .card.card-button {
+.aplications .see-more {
     /* align-self: flex-end; */
-    background-color: rgba(32, 5, 5, 0.6);
+    background-color: rgba(32, 5, 5, 0.98);
     color: white;
     margin: 15px;
     padding: 8px 6px;
     font-size: 0.7rem;
     border-radius: 30px;
     border: 3px solid rgb(40, 3, 3);
+}
 
+.aplications .see-more:hover {
+    background-color: blueviolet;
+    cursor: pointer;
+}
+
+.aplications .see-more:active {
+    background-color: rgb(105, 10, 189);
 }
 .aplications p {
     margin: 6px 0px 14px 2px;
@@ -396,16 +409,36 @@ h3 {
 }
 
 li.login {
+    margin-right: 20px;
     padding: 0 5px;
     background-color: rgba(165, 42, 42,0.8);
     text-decoration: underline;
     text-align: right;
 }
 
-.content-lg {
+.aplications-content {
     margin-top: 20px;
-    margin-left: -5vw;
     display: none;
+    /* max-height: 30vh; */
+    align-self: center;
+}
+
+.aplications-content .main {
+    margin: 35px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    max-height: 480px;
+}
+
+@media screen and (min-width: 420px) {
+    
+    .mid-row {
+        margin-left: 0%;
+    }
+    .operation-content {
+        margin-right: 50px;
+    }
 }
 
 @media screen and (min-width:660px) {
@@ -414,7 +447,7 @@ li.login {
         position: relative;
     }
 
-    .content-lg {
+    .aplications-content {
         display: flex;
     }
 
