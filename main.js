@@ -6,9 +6,13 @@ opButton.addEventListener('click', () => toggleOperation())
 
 
 function toggleOperation() {
-    opContent.hasAttribute('style') ?
-        (opContent.removeAttribute('style'),
-            opButton.setAttribute('style', 'background-color:rgb(38, 50, 16)'))
-        : (opButton.setAttribute('style','background-color:rgb(56,21,46)'),
-        opContent.setAttribute('style', 'display:none;'))
+    if (opContent.hasAttribute('style')) {
+        // opContent.setAttribute('style', 'display:none;')
+        opContent.removeAttribute('style')
+    opButton.setAttribute('style', 'background-color:rgb(56,21,46)')
+} else {
+    opButton.setAttribute('style', 'background-color:rgb(38, 50, 16)')
+    opContent.setAttribute('style', 'display:flex;')
+
+} 
 }

@@ -356,7 +356,7 @@ a {
 
 .cards-wallet {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 52% 1fr;
     align-items: center;
 }
 
@@ -364,14 +364,54 @@ a {
     justify-self: center;
 }
 
-.cards-wallet .wallet {
-    text-align: start;
+.wallet h3 {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
 }
+
+.wallet-button-row {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.wallet-button-row button {
+    width: 100px;
+    padding: 3px;
+    margin: 0 3px;
+    font-size: 0.8rem;
+}
+
+.account-card {
+    display: flex;
+    padding: 10px;
+    width: 100px;
+    min-height: 60px;
+    font-size: 0.9rem;
+}
+
+.account-card .nr-cartao {
+    margin-top: 10px;
+}
+
+div .account-card p {
+    background-color: rgba(255, 255, 255, 0.699);
+    font-size: 0.9rem;
+    margin-bottom: 0px;
+    align-self: flex-end;
+    padding: 2px 6px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    text-shadow: 0.3px 0.3px 0.3px rgba(0, 0, 0, 0.489);
+}
+
+
 .aplication-qty {
     align-self: flex-end;
     background-color: rgb(28, 17, 17);
     padding: 3px;
-    color: white;
+    color: rgb(187, 116, 116);
     font-size: 1rem;
 }
 
@@ -522,6 +562,51 @@ li.login, li.login-button {
     align-items: center;
 }
 
+.op-button:active {
+    background-color: rgb(45, 72, 19);
+}
+
+.account-operations .valor-cartao {
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.581);
+    margin: 0px;
+    padding: 8px 10px;
+    width: 97%;
+    color: rgba(255, 255, 255, 0.809);
+    text-align: right;
+}
+
+
+.account-operations {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.account-operations ul {
+    padding: 0px 3px;
+}
+
+.account-operations li {
+    display: flex;
+}
+.account-op-button {
+    font-size: 1.1rem;
+    width: 26px;
+    height: 25px;
+    margin: 0.1rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.green-balance {
+    background-color: green;
+}
+
+.red-balance {
+    background-color: rgba(255, 0, 0, 0.555);
+}
+
 @media screen and (min-width: 420px) {  
 
     .mid-row {
@@ -546,6 +631,7 @@ li.login, li.login-button {
         display: flex;
     }
 }
+
 
 @media screen and (min-width:660px) {
 
@@ -573,4 +659,6 @@ li.login, li.login-button {
     .social-media {
         font-size: 1.1rem;
     }
+
 }
+
