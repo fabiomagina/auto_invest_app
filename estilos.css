@@ -14,14 +14,14 @@ body {
 .cabecalho {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 9px 0 6px;
+    justify-content: space-evenly;
+    padding: 12px 0 3px;
     background-color: rgb(8, 2, 9);
     height: 90px;
     color: white;
     margin: 0px;
     width: 100vw;
-    max-width: 100vw;
+    max-width: 100vw;   
 }
 
 .header-logo {
@@ -38,7 +38,7 @@ body {
     background-color: rgb(107, 107, 67);
     padding: 12px;
     border-radius: 90px;
-    font-size: 2.2rem;
+    font-size: 2rem;
     box-shadow: 0rem 0rem 4rem 2px rgba(211, 225, 13, 0.5);
 }
 
@@ -50,8 +50,6 @@ body {
 
 .menu {
     font-size: 1.3rem;
-    position: absolute;
-    right: 6.5%;
 }
 
 .menu ul {
@@ -109,13 +107,13 @@ body {
 
 .mid-row {
     background-color: black;
-    width: 92vw;
+    width: 100vw;
     margin: 9px 0 3px 0;
     display: flex;
     padding: 45px 0 30px 0px;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -124,15 +122,11 @@ body {
     z-index: 3;
 }
 
-.menu {
-    /* display: none; */
-}
-
 .operation-content .content-desc {
     font-size: 1rem;
 }
 
-.operation-content s {
+.operation-content .content {
     min-height: 50vh;
     width: 60px;
     display: flex;
@@ -164,20 +158,16 @@ a {
 
 .content-desc {
     padding: 6px;
+    font-size: 2rem;
     background-color: rgb(43, 17, 5);
-}
-
-.content-desc h2 {
-    font-size: 1.6rem;
-    font-weight: 100;
 }
 .full-content {
     display: flex;
     background-color: blanchedalmond;
-    min-width: 40%;
-    /* max-width: 40%; */
+    max-width: 40%;
     justify-content: center;
     border-radius: 4px;
+    max-width: 300px;
 }
 
 .main {
@@ -191,7 +181,7 @@ a {
 }
 
 .content {
-    background-color: rgb(30, 19, 1);
+    background-color: rgb(57, 19, 19);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -203,6 +193,7 @@ a {
 
 
 .tipo {
+    font-size: 1.1rem;
     font-weight: 300;
     background-color: rgba(0, 255, 255, 0.474);
     color: white;
@@ -212,16 +203,15 @@ a {
     text-shadow: -0.2px 0.5px 0.1px rgba(46, 41, 41, 0.1);
 }
 
+h3 {
+    font-size: 1rem;
+    width: 80px;
+}
+
 .tipo-carteira {
     background-color: rgb(9, 130, 223);
     padding: 8px 6px;
 }
-
-.aplications-content .tipo {
-    font-size: 1.45rem;
-    color: rgb(255, 245, 233);
-}
-
 
 .operation-content .content-desc {
     display: flex;
@@ -243,16 +233,19 @@ a {
 }
 
 .aplications {    
-    /* position:absolute;  */
+    position:absolute; 
     font-size: 0.6rem;
-    background-color: rgba(21, 7, 7, 0.903);
+    background-color: rgb(28, 6, 6);
     padding: 7px;
     display: flex;
     flex-direction: column;
+    width: 110px;
+    /* margin-top: 7%; */
+    margin-left: 3%;
     z-index: 2;
     max-height: 450px;
     border-radius: 6px;
-    /* display: none; */
+    display: none;
 }
 
 .main form {
@@ -327,7 +320,7 @@ a {
 
 .aplications h2 {
     margin-bottom: 18px;
-    margin-top: 6px;
+    margin-top: 3px;
     padding: 9px 19px;
     background-color: rgba(59, 73, 34, 0.8);
     color: rgba(255, 255, 255, 0.97);
@@ -336,37 +329,16 @@ a {
 }
 
 .aplications .card {
-    background-color: #202324;
-    color: rgb(255, 240, 240);
+    background-color: white;
     margin: 6px 2px;
-    padding: 6px 0px 6px 0;
+    padding: 6px 0px 0 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center ;
     height: 50px;
-    min-width: 80px;
-    flex-grow: 1;
 }
 
-.aplications .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-.cards-wallet {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
-
-.cards-wallet ul {
-    justify-self: center;
-}
-
-.cards-wallet .wallet {
-    text-align: start;
-}
 .aplication-qty {
     align-self: flex-end;
     background-color: rgb(28, 17, 17);
@@ -383,29 +355,17 @@ a {
     padding: 8px 6px;
     font-size: 0.7rem;
     border-radius: 30px;
-    /* border: 3px solid rgb(40, 3, 3); */
+    border: 3px solid rgb(40, 3, 3);
 }
 
 .aplications .see-more:hover {
-    background-color: rgba(59, 16, 97, 0.462);
+    background-color: blueviolet;
     cursor: pointer;
 }
 
-.see-more h2 {
-    margin: 0px;
-    border-radius: 15px;
-    background-color: rgb(49, 49, 0);
-
+.aplications .see-more:active {
+    background-color: rgb(105, 10, 189);
 }
-
-.see-more h2:hover {
-    background-color: rgba(59, 73, 34, 0.8);
-}
-
-.see-more h2:active {
-    background-color: rgb(76, 76, 0);
-}
-
 
 .aplications p {
     margin: 6px 0px 14px 2px;
@@ -510,45 +470,43 @@ li.login, li.login-button {
 }
 
 .aplications-content {
-    /* margin: 0 5vw; */
     margin-top: 20px;
-    align-self: self-start;
-    max-width: 300px;
+    display: none;
+    /* max-height: 30vh; */
+    align-self: center;
 }
 
 .aplications-content .main {
+    /* margin: 35px; */
     padding: 3px;
     display: flex;
     align-items: center;
+    max-height: 480px;
 }
 
 @media screen and (min-width: 420px) {  
 
     .mid-row {
-        gap: 3vw    ;
+        /* gap: 3vw    ; */
         /* padding-left: 7%; */
     }
-    .operation-content {
-        display: none;
-        position: absolute;
-        right: 6%;
-        top: 90px;
-    }
-
+   
 
     .login-button {
         display: block;
     }
     
     
+}
+
+@media screen and (min-width:660px) {
+    .operation-content {
+        display: flex;
+    }
     .operation-content .content-desc {
 
         display: flex;
     }
-}
-
-@media screen and (min-width:660px) {
-
     .fav {
         display: none;
     }
@@ -557,7 +515,7 @@ li.login, li.login-button {
         position: relative;
     }
     .aplications-content {
-        max-width: 30vw;
+        display: flex;  
     }
     .footer {
         font-size: 1.2rem;

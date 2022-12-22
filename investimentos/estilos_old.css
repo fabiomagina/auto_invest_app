@@ -6,22 +6,18 @@
 
 body {
     background-color: black;
-    display: flex;
     justify-content: center;
-
 }
 
 .cabecalho {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 9px 0 6px;
+    padding: 12px 0 3px;
     background-color: rgb(8, 2, 9);
     height: 90px;
     color: white;
-    margin: 0px;
     width: 100vw;
-    max-width: 100vw;
 }
 
 .header-logo {
@@ -34,24 +30,13 @@ body {
     text-shadow: 0.5px 1px 1px  black;
 }
 
-.ai-header {
-    background-color: rgb(107, 107, 67);
-    padding: 12px;
-    border-radius: 90px;
-    font-size: 2.2rem;
-    box-shadow: 0rem 0rem 4rem 2px rgba(211, 225, 13, 0.5);
-}
-
-.ai-header-lg {
-    display: none;
+.header-logo h1 {
     margin: 0px;
     padding-bottom: 8px;
 }
 
 .menu {
     font-size: 1.3rem;
-    position: absolute;
-    right: 6.5%;
 }
 
 .menu ul {
@@ -66,11 +51,6 @@ body {
     list-style-type: none;    
 }
 
-.menu li:hover {
-    background-color: rgb(4, 27, 69);
-}
-
-
 .menu li a {
     text-decoration: none;
 }
@@ -84,16 +64,15 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* width: 100vw; */
+    max-width: 50vw;
 }
 
 .container-fluid {
-    background-color: rgb(38, 50, 16);
+    background-color: darkolivegreen;
     margin: 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;
 }
 
 .menu-items {
@@ -109,119 +88,118 @@ body {
 
 .mid-row {
     background-color: black;
-    width: 92vw;
+    width: 100vw;
+    /* height: 56%; */
     margin: 9px 0 3px 0;
     display: flex;
-    padding: 45px 0 30px 0px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    gap: 3%   
+    
 }
 
-.operation-content {  
-    display: none;  
-    z-index: 3;
+.operation-content {
+    display: flex;
+    justify-content: center;
+    /* margin-left: 3vh; */
+    margin-right: -10.5vh;
+    z-index:5;
+    display: none;
 }
 
-.menu {
-    /* display: none; */
+.operation-content .main {
+    display: flex;
+    align-items: center;
+    
 }
 
-.operation-content .content-desc {
-    font-size: 1rem;
-}
-
-.operation-content s {
-    min-height: 50vh;
+.operation-content .content {
+    max-height: 85vh;
     width: 60px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    gap: 20px;
+    
 }
 
 .op-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5rem 1rem;
+    padding: 10px;
     text-align: center;
     width: 60px;
-    background-color: rgb(27, 20, 21);
-    border: 1px solid gray;
-    color: rgb(234, 234, 244);
-    font-size: 2rem;
-    cursor: pointer
+    background-color: white;
+    border: 1px solid gray
 }
-
 
 a {
     text-decoration: none;
 }
 
 .content-desc {
+    font-size: 1.2rem;
     padding: 6px;
+    margin-top: -5vh;
+    margin-bottom: 3vh;
     background-color: rgb(43, 17, 5);
-}
-
-.content-desc h2 {
-    font-size: 1.6rem;
-    font-weight: 100;
 }
 .full-content {
     display: flex;
     background-color: blanchedalmond;
-    min-width: 40%;
-    /* max-width: 40%; */
+    max-width: 40%;
     justify-content: center;
-    border-radius: 4px;
+    /* max-width: 300px; */
 }
 
 .main {
-    margin: 12% 0;
+    /* margin: 12% 0; */
     background-color: blanchedalmond;
     display: flex;
     justify-content: center;
-    /* min-height: 67vh; */
+    align-items: center ;
+    min-height: 47vh;
     padding: 30px 12px;
     border-radius: 4px;
 }
 
+.menu .wallet-menu-button {
+    background-color:rgb(38, 50, 16);
+}
+
 .content {
-    background-color: rgb(30, 19, 1);
+    background-color: rgb(57, 19, 19);
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     padding-bottom: 30px;
-    padding: 15px 6px;
+    padding: 15px 13px;
     border-radius: 4px;
 }
 
 
 .tipo {
+    font-size: 1.2rem;
     font-weight: 300;
-    background-color: rgba(0, 255, 255, 0.474);
+    background-color: rgb(0, 255, 255, 0.9);
     color: white;
-    padding: 8px 6px;
+    padding: 13px;
     margin-bottom: 20px;
     z-index: 1;
     text-shadow: -0.2px 0.5px 0.1px rgba(46, 41, 41, 0.1);
+    
+}
+h3 {
+    font-size: 0.8rem;
+    width: 80px;
+    
 }
 
 .tipo-carteira {
     background-color: rgb(9, 130, 223);
-    padding: 8px 6px;
+    padding: 13px;
+    
 }
-
-.aplications-content .tipo {
-    font-size: 1.45rem;
-    color: rgb(255, 245, 233);
-}
-
 
 .operation-content .content-desc {
     display: flex;
@@ -229,30 +207,57 @@ a {
     align-items: center;
     width: 80px;
     text-align:center;
-    display: none;
+    margin-top: 10px;
 }
-
 .content-desc h1 {
     background-color: rgba(0, 0, 0, 1);
     padding: 10px 20px 3px 20px;
     color: white;
+       
 }
 
-.content-desc h3 {
-    margin: 3px 0 9px 0;
+.cards {
+    display: flex;
+    justify-content: center;
 }
 
+.see-more {
+    margin: 30px 0 20px 0;
+    background-color: rgb(10, 1, 1);
+    cursor: pointer;
+}
 .aplications {    
-    /* position:absolute;  */
     font-size: 0.6rem;
-    background-color: rgba(21, 7, 7, 0.903);
+    background-color: rgb(28, 6, 6);
+    color: black;
     padding: 7px;
     display: flex;
+    /* min-width: 0vw; */
+    /* width: 600px; */
+    width: 80vw;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 7%; */
     z-index: 2;
-    max-height: 450px;
+    max-height: 63vh;
     border-radius: 6px;
+}
+
+.aplications-content {
+    margin: 9vh;
+    /* margin: 16vh 0 10vh 0; */
     /* display: none; */
+    /* max-height: 30vh; */
+    align-self: center;
+    z-index: 3;
+}
+
+.aplications-content .main {
+    margin: 35px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
 }
 
 .main form {
@@ -262,39 +267,30 @@ a {
     flex-wrap: wrap; 
     font-size: 1.3rem;
     margin: 3% 0;
+    
 }
 
 .form input {
-    padding: 6px 3px 3px 3px;
+    padding: 3px;
     margin: 6px 20% 7px 20%;
     font-size: 1.2rem;
-    /* text-align: right; */
-    outline: none;
-    background-color: rgb(205, 205, 205);
+    text-align: right;
 }
 
-.form input:focus, form textarea:focus {
-    background-color: rgb(4, 35, 4);
-    color:rgb(235, 235, 235)
 
-
-}
 .form :nth-child(4) {
     width: 120px;
 }
 
 
 .form textarea {
-    min-width: 260px;
+    min-width: 290px;
     max-width: 290px;
     height: 50px;
     font-size: 1.1rem;
     margin: 10px;
     padding: 5px;
-    outline: none;
-    background-color: rgb(205, 205, 205);
 }
-
 .button-row {
     display: flex;
     justify-content: flex-end;
@@ -306,14 +302,9 @@ a {
     background-color: rgb(66, 53, 53);
     padding: 1px;
     width: 86px;
+    margin: 3px;
     color: white;
     font-size: 1rem;
-}
-
-.button-row .fav {
-    margin-left: 140px;
-    margin-top: -5px;
-
 }
 .send-button {
     padding: 6px;
@@ -327,46 +318,30 @@ a {
 
 .aplications h2 {
     margin-bottom: 18px;
-    margin-top: 6px;
+    margin-top: 3px;
     padding: 9px 19px;
     background-color: rgba(59, 73, 34, 0.8);
     color: rgba(255, 255, 255, 0.97);
     font-size: 1.1rem;
     text-align: center;
 }
-
 .aplications .card {
-    background-color: #202324;
-    color: rgb(255, 240, 240);
+    background-color: white;
     margin: 6px 2px;
-    padding: 6px 0px 6px 0;
+    padding: 6px 0px 0 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center ;
     height: 50px;
-    min-width: 80px;
-    flex-grow: 1;
+    width: 90px;
+    cursor: pointer;
 }
-
 .aplications .cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.cards-wallet {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-}
-
-.cards-wallet ul {
-    justify-self: center;
-}
-
-.cards-wallet .wallet {
-    text-align: start;
-}
 .aplication-qty {
     align-self: flex-end;
     background-color: rgb(28, 17, 17);
@@ -375,46 +350,28 @@ a {
     font-size: 1rem;
 }
 
-.aplications .see-more {
+.aplications .card.card-button {
     /* align-self: flex-end; */
-    background-color: rgba(32, 5, 5, 0.98);
+    background-color: rgba(32, 5, 5, 0.6);
     color: white;
     margin: 15px;
     padding: 8px 6px;
     font-size: 0.7rem;
     border-radius: 30px;
-    /* border: 3px solid rgb(40, 3, 3); */
-}
-
-.aplications .see-more:hover {
-    background-color: rgba(59, 16, 97, 0.462);
-    cursor: pointer;
-}
-
-.see-more h2 {
-    margin: 0px;
-    border-radius: 15px;
-    background-color: rgb(49, 49, 0);
+    border: 3px solid rgb(40, 3, 3);
 
 }
-
-.see-more h2:hover {
-    background-color: rgba(59, 73, 34, 0.8);
-}
-
-.see-more h2:active {
-    background-color: rgb(76, 76, 0);
-}
-
-
 .aplications p {
     margin: 6px 0px 14px 2px;
     color: rgb(14, 78, 14);
     font-weight: bold;
+    /* background-color: rgba(255, 255, 255, 0.3); */
+
 }
 
 .aplications .red {
     color: red;
+    /* background-color: green; */
 }
 
 .footer {
@@ -426,7 +383,7 @@ a {
     justify-content: center;
     background-color: rgb(27, 27, 27);
     color: rgb(191, 191, 191);
-    padding: 60px 0;
+    padding: 3vh 0 5vh 0;
     margin: 0;
     font-size: 1rem;
     width: 100%;
@@ -437,7 +394,7 @@ a {
 .footer li h3 {
     font-size: 1.03rem;
     /* text-align: center; */
-    width: 100%;
+    width: 200px;
     text-decoration: underline;
 }
 
@@ -456,6 +413,7 @@ a {
     font-size: 1.25rem;
     text-align: right;
     margin: 20px 0px 30px 0;
+    width: 100vw;
     display: flex;
     flex-direction: column;
 }
@@ -468,9 +426,9 @@ a {
 .footer ul {
     display: flex;
     flex-direction: column;
-    min-width: 160px;
+    min-width: 140px;
     list-style-type: none;
-    padding: 6px 0px 8px 0px;
+    padding-bottom: 8px;
 }
 
 .footer li {
@@ -488,6 +446,7 @@ a {
     justify-content: center;
     flex-wrap: wrap;
     gap: 18px;
+    width: 100vw;
 }
 
 
@@ -495,82 +454,88 @@ a {
     font-size: 1rem;
 }
 
-.login, .login-button {
+.login {
     background-color: rgba(165, 42, 42,0.8);
     text-align: right;
-    display: none;
 }
 
-li.login, li.login-button {
+li.login {
     margin-right: 20px;
-    padding: 6px 9px;
+    padding: 0 5px;
     background-color: rgba(165, 42, 42,0.8);
     text-decoration: underline;
     text-align: right;
 }
 
-.aplications-content {
-    /* margin: 0 5vw; */
-    margin-top: 20px;
-    align-self: self-start;
-    max-width: 300px;
+
+
+
+/* .login {
+    background-color: rgba(165, 42, 42,0.8);
+
 }
 
-.aplications-content .main {
-    padding: 3px;
-    display: flex;
-    align-items: center;
-}
+li.login {
+    padding: 3px 6px ;
+    background-color: rgba(165, 42, 42,0.8);
+    text-decoration: underline;
+    align-self: center;
+    /* display: none; */
+/* } */ 
 
-@media screen and (min-width: 420px) {  
-
-    .mid-row {
-        gap: 3vw    ;
-        /* padding-left: 7%; */
-    }
-    .operation-content {
-        display: none;
-        position: absolute;
-        right: 6%;
-        top: 90px;
-    }
-
-
-    .login-button {
-        display: block;
-    }
-    
-    
-    .operation-content .content-desc {
-
-        display: flex;
-    }
-}
 
 @media screen and (min-width:660px) {
-
-    .fav {
-        display: none;
-    }
     .aplications {
         display: flex;
         position: relative;
     }
+
     .aplications-content {
-        max-width: 30vw;
+        display: flex;
     }
+
     .footer {
         font-size: 1.2rem;
     }
     .footer-row {
         gap: 45px;
     }
+
     .footer .ai-description h3 {
         font-size: 1.6rem;
-        width: 100%;
+        width: 100vw;
         text-align: center;
     }
     .social-media {
         font-size: 1.1rem;
     }
+}
+
+@media screen and (min-width:1060px) {
+    .aplications {
+        display: flex;
+        position: relative; 
+        width: 860px; 
+    }
+
+    .operation-content {
+        display: flex;
+    }
+
+    .footer {
+        font-size: 1.2rem;
+    }
+    .footer-row {
+        gap: 45px;
+    }
+
+    .footer .ai-description h3 {
+        font-size: 1.6rem;
+        width: 100vw;
+        text-align: center;
+    }
+    .social-media {
+        font-size: 1.1rem;
+    }
+    
 }

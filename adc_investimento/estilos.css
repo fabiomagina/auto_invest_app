@@ -103,6 +103,10 @@ body {
     padding: 12px 20px;
 }
 
+#operation-button {
+        background-color:rgb(38, 50, 16);
+}
+
 .mid-row {
     background-color: black;
     width: 100%;
